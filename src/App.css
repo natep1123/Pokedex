@@ -1,0 +1,59 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222222;
+  color: #f8f8f8;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #f8f8f8;
+}
+
+button {
+  background-color: #f8f8f8;
+  color: #222222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Pokedex Container */
+.pokedex {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next row */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Pokecard Styles */
+.pokecard {
+  width: 150px;
+  text-align: center; /* Centers content inside each card */
+  background-color: #3e3e3e;
+  border: 2px solid #f8f8f8;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pokecard img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokecard h3 {
+  text-transform: capitalize;
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.pokecard p {
+  font-size: 0.9em;
+}
