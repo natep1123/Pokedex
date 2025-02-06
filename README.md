@@ -2,7 +2,7 @@
 
 _Displays 10 pokemon cards at a time. Click the button to refresh and get a new set from the pokeAPI._
 
-[Click here to watch the demo video](//)
+[Click here to watch the demo video](https://drive.google.com/file/d/1s8RSGV-ya3ueOOhdbU5taEhe9rmcJGki/view?usp=drive_link)
 
 ## React.js App practicing:
 
@@ -10,3 +10,14 @@ _Displays 10 pokemon cards at a time. Click the button to refresh and get a new 
 - Component design (Pokedex.jsx and PokeCard.jsx)
 - Fetcing data from an API
 - useEffect hook
+
+## Component Design:
+
+- App --> Pokedex
+  - Manages state for pokemon array and loading
+  - Initializes function to fetch data from pokeAPI
+  - Passes function to child component
+  - Renders title, button and either "Loading..." or Pokedex component
+- Pokedex --> Pokecard
+  - Renders a PokeCard component for each object in the pokeon array
+- PokeCard --> renders individual card with pokemon data
